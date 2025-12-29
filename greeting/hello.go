@@ -1,6 +1,10 @@
 package greeting
 
-var greeting string = "Golang for Brave!"
+import (
+	color "github.com/fatih/color"
+)
+
+var greeting string = color.BlueString("Golang for Brave!")
 
 func Hello() string {
 	return greeting
